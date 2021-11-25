@@ -18,28 +18,28 @@ contract MyEpicNFT is ERC721URIStorage {
     // I create three arrays, each with their own theme of random words.
     // Pick some random funny words, names of anime characters, foods you like, whatever!
     string[] firstWords = [
-        "DADDY",
+        "MINT",
         "BRUH",
-        "ESKETIT",
+        "ETHEREUM",
         "CHELSEA",
         "MANCHESTER UNITED",
-        "DEEZ NUTS"
+        "SOLANA"
     ];
     string[] secondWords = [
-        "DADDY",
+        "MINT",
         "BRUH",
-        "ESKETIT",
+        "ETHEREUM",
         "CHELSEA",
-        "MANCHESTER-UNITED",
-        "DEEZ NUTS"
+        "MANCHESTER UNITED",
+        "SOLANA"
     ];
     string[] thirdWords = [
-        "DADDY",
+        "MINT",
         "BRUH",
-        "ESKETIT",
+        "ETHEREUM",
         "CHELSEA",
-        "MANCHESTER-UNITED",
-        "DEEZ NUTS"
+        "MANCHESTER UNITED",
+        "SOLANA"
     ];
 
     //events are the messages our smart contracts throw out that we can capture on our client in real time.
