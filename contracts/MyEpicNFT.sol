@@ -58,7 +58,7 @@ contract MyEpicNFT is ERC721URIStorage {
         view
         returns (string memory)
     {
-        // I seed the random generator. More on this in the lesson.
+        // seed the random generator
         uint256 rand = random(
             string(abi.encodePacked("FIRST_WORD", Strings.toString(tokenId)))
         );
@@ -98,12 +98,12 @@ contract MyEpicNFT is ERC721URIStorage {
     function makeAnEpicNFT() public {
         uint256 newItemId = _tokenIds.current();
 
-        // We go and randomly grab one word from each of the three arrays.
+        // randomly grab one word from each of the three arrays.
         string memory first = pickRandomFirstWord(newItemId);
         string memory second = pickRandomSecondWord(newItemId);
         string memory third = pickRandomThirdWord(newItemId);
 
-        // I concatenate it all together, and then close the <text> and <svg> tags.
+        // concatenate it all together, and then close the <text> and <svg> tags.
         string memory finalSvg = string(
             abi.encodePacked(baseSvg, first, second, third, "</text></svg>")
         );
@@ -113,7 +113,7 @@ contract MyEpicNFT is ERC721URIStorage {
 
         _safeMint(msg.sender, newItemId);
 
-        // We'll be setting the tokenURI later!
+        //  setting the tokenURI 
         _setTokenURI(newItemId, "blah");
 
         _tokenIds.increment();
